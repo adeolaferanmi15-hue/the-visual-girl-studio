@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#C4DAE8">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<meta name="description" content="The Visual Girl — international AI Creative Studio portfolio. AI-generated product visuals, social content, AI spokesperson videos, commercials and creative campaigns.">
+<title>The Visual Girl — International AI Creative Studio</title>
+<style>
+:root{--blue:#C4DAE8;--butter:#FEEFB8;--cocoa:#432F2E;--paper:#FBF8F0;--muted:#756260;--line:rgba(67,47,46,.2);--serif:'Playfair Display',Georgia,'Times New Roman',serif;--sans:'DM Sans',Arial,Helvetica,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--cocoa);font-family:var(--sans);overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}
+.header{position:fixed;z-index:20;inset:0 0 auto;display:flex;align-items:center;justify-content:space-between;padding:17px 5vw;background:#fbf8f0e8;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.wordmark{font:700 21px/.84 var(--serif);letter-spacing:-.06em}.wordmark small{display:block;margin-top:7px;font:9px var(--sans);letter-spacing:.22em}
+.nav{display:flex;gap:25px;align-items:center;font-size:10px;text-transform:uppercase;letter-spacing:.1em}.nav a{transition:transform .25s,color .25s}.nav a:hover{transform:translateY(-3px);color:#98776a}.menu{display:none;border:0;background:none;color:var(--cocoa);font-size:24px}
+.hero{min-height:100svh;padding:145px 7vw 65px;background:var(--blue);display:flex;flex-direction:column;justify-content:space-between}.eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;display:flex;justify-content:space-between;gap:20px}.hero h1{font:clamp(66px,13.5vw,185px)/.78 var(--serif);letter-spacing:-.085em;margin:10vh 0 8vh}.hero h1 span{display:block}.hero h1 .stroke{font-style:italic;color:transparent;-webkit-text-stroke:1.4px var(--cocoa);padding-left:13vw}.hero-bottom{display:flex;justify-content:space-between;align-items:end;gap:25px}.hero-copy{font:clamp(18px,2vw,24px)/1.35 var(--serif);max-width:470px}.hero-copy small{display:block;margin-top:14px;font:10px var(--sans);letter-spacing:.12em;text-transform:uppercase}.actions{display:flex;gap:9px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--cocoa);border-radius:60px;padding:13px 19px;font-size:10px;text-transform:uppercase;letter-spacing:.12em;transition:transform .25s,background .25s,color .25s,box-shadow .25s}.btn:hover{transform:scale(1.06);background:var(--cocoa);color:var(--butter);box-shadow:0 10px 24px #432f2e20}.btn.filled{background:var(--cocoa);color:var(--butter)}.btn.filled:hover{background:transparent;color:var(--cocoa)}
+.ticker{background:var(--cocoa);color:var(--butter);overflow:hidden;white-space:nowrap;padding:15px 0;font:italic 19px var(--serif)}.ticker span{display:inline-block;animation:slide 28s linear infinite}@keyframes slide{to{transform:translateX(-50%)}}
+section{padding:100px 7vw}.kicker{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}.heading{font:clamp(44px,7vw,88px)/.94 var(--serif);letter-spacing:-.065em;margin:20px 0 32px}.intro-grid,.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:9vw;align-items:end}.intro-lead{font:clamp(22px,3.25vw,40px)/1.2 var(--serif);max-width:760px}.intro-copy{font-size:13px;line-height:1.9;max-width:430px}.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:28px}.pill{padding:10px 14px;border:1px solid var(--line);border-radius:40px;font-size:9px;letter-spacing:.1em;text-transform:uppercase}
+.work{background:#f0ebdf}.work-intro{display:flex;justify-content:space-between;gap:30px;align-items:end}.work-intro p{font-size:11px;color:var(--muted);max-width:260px;line-height:1.7}.accordion{border-top:1px solid var(--line)}.work-item{border-bottom:1px solid var(--line)}.work-trigger{width:100%;border:0;background:none;color:var(--cocoa);padding:22px 0;display:flex;gap:20px;align-items:center;text-align:left;cursor:pointer}.work-trigger strong{font:clamp(24px,4vw,48px) var(--serif);letter-spacing:-.04em;transition:padding .25s}.work-trigger:hover strong{padding-left:10px}.work-trigger em{margin-left:auto;font:italic 12px var(--serif);opacity:.7}.plus{font-size:23px;transition:transform .3s}.work-item.open .plus{transform:rotate(45deg)}.work-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s ease}.work-item.open .work-panel{grid-template-rows:1fr}.work-panel-inner{overflow:hidden}.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;padding:4px 0 30px}.tile{position:relative;border:0;padding:0;overflow:hidden;cursor:pointer;background:#e5dfd3;aspect-ratio:4/5;border-radius:2px}.tile img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .65s cubic-bezier(.2,.7,.2,1),filter .35s}.tile:hover img{transform:scale(1.075);filter:saturate(1.07)}.tile:after{content:'VIEW PROJECT ↗';position:absolute;left:12px;bottom:12px;padding:10px 13px;border-radius:35px;background:var(--butter);color:var(--cocoa);font-size:9px;letter-spacing:.12em;opacity:0;transform:translateY(8px);transition:.3s}.tile:hover:after{opacity:1;transform:translateY(0)}.tile.wide{grid-column:span 2;aspect-ratio:16/9}.tile.video:before{content:'▶  CLICK TO WATCH WITH SOUND';position:absolute;z-index:2;left:12px;bottom:12px;background:var(--butter);padding:10px 13px;border-radius:40px;font-size:8px;letter-spacing:.1em}.tile.video:after{display:none}.gallery-note{font-size:10px;color:var(--muted);padding:0 0 23px}
+.about{background:var(--cocoa);color:var(--butter)}.about .kicker{color:#e5d4b2}.about .intro-lead{font:clamp(24px,3.7vw,46px)/1.15 var(--serif)}.about-copy{font-size:13px;line-height:1.9;color:#f2e5cc}.about .pill{border-color:#f2e5cc66;color:var(--butter)}
+.services{background:var(--butter)}.service-list{border-top:1px solid #432f2e55}.service-row{display:grid;grid-template-columns:60px 1fr 1fr;gap:18px;align-items:center;padding:23px 0;border-bottom:1px solid #432f2e55}.service-row .num{font-size:10px;opacity:.65}.service-row h3{font:clamp(22px,3.4vw,39px) var(--serif);margin:0}.service-row p{max-width:410px;font-size:12px;line-height:1.75;margin:0}
+.pricing{background:var(--paper)}.pricing-top{display:flex;justify-content:space-between;align-items:end;gap:25px}.pricing-top p{max-width:370px;font-size:12px;line-height:1.8}.tabs{display:flex;gap:8px;margin:28px 0 17px}.tab{cursor:pointer;border:1px solid var(--cocoa);border-radius:40px;padding:12px 17px;color:var(--cocoa);background:transparent;font-size:9px;letter-spacing:.12em;text-transform:uppercase;transition:.25s}.tab.active,.tab:hover{background:var(--cocoa);color:var(--butter)}.price-panel{display:none}.price-panel.active{display:block}.price-card{border:1px solid var(--line);border-radius:3px;margin:10px 0;overflow:hidden}.price-trigger{width:100%;border:0;background:transparent;color:var(--cocoa);padding:22px;display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:25px;text-align:left;cursor:pointer}.price-trigger:hover{background:#c4dae84a}.price-trigger strong{font:clamp(22px,3vw,34px) var(--serif)}.price-trigger .amount{font:clamp(18px,2.5vw,27px) var(--serif)}.price-trigger .plus{font-size:20px}.price-card.open .plus{transform:rotate(45deg)}.price-details{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s}.price-card.open .price-details{grid-template-rows:1fr}.price-details>div{overflow:hidden}.detail-inner{padding:0 22px 22px;display:flex;align-items:end;justify-content:space-between;gap:28px}.detail-inner ul{padding-left:18px;font-size:12px;line-height:2}.detail-inner p{font-size:11px;color:var(--muted)}.revision{display:inline-block;margin-top:12px;padding:11px 14px;background:var(--blue);font-size:10px}.service-group{border-top:1px solid var(--line);padding:22px 0}.service-group h3{font:29px var(--serif);margin:0 0 12px}.price-line{display:flex;justify-content:space-between;gap:20px;padding:12px 0;border-bottom:1px solid var(--line);font-size:12px}.price-line strong{white-space:nowrap}.quote{background:var(--blue);padding:20px;font:26px var(--serif);margin-top:15px}
+.process{background:var(--blue)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:45px}.step{border-top:1px solid var(--cocoa);padding-top:17px}.step b{font-size:10px;letter-spacing:.12em}.step h3{font:29px var(--serif);margin:16px 0 9px}.step p{font-size:12px;line-height:1.8;max-width:280px}.faq{background:#f0ebdf}.faq details{border-top:1px solid var(--line);padding:18px 0}.faq details:last-child{border-bottom:1px solid var(--line)}.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;font:22px var(--serif)}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:'+'}.faq details[open] summary:after{content:'−'}.faq details p{font-size:12px;line-height:1.8;max-width:720px}.contact{background:var(--cocoa);color:var(--butter);padding-bottom:50px}.contact .kicker{color:#e5d4b2}.contact-row{display:flex;justify-content:space-between;align-items:end;gap:25px;flex-wrap:wrap}.contact-links{display:flex;gap:9px;flex-wrap:wrap}.contact .btn{border-color:var(--butter)}.contact .btn:hover{background:var(--butter);color:var(--cocoa)}.signature{font:italic 17px var(--serif)}footer{display:flex;justify-content:space-between;gap:20px;padding:23px 7vw;background:var(--cocoa);color:#e5d4b2;border-top:1px solid #f5e8ca55;font-size:9px;letter-spacing:.08em}
+.viewer{position:fixed;z-index:60;inset:0;background:#171211f2;display:none;align-items:center;justify-content:center;padding:4vw}.viewer.show{display:flex}.viewer img,.viewer video{max-width:92vw;max-height:86vh;object-fit:contain}.viewer-close{position:absolute;right:25px;top:16px;border:0;background:none;color:white;font-size:35px;cursor:pointer}.viewer-caption{position:absolute;bottom:17px;color:#fff;font-size:9px;letter-spacing:.15em;text-transform:uppercase}.reveal{opacity:0;transform:translateY(24px);transition:opacity .75s,transform .75s}.reveal.visible{opacity:1;transform:none}
+@media(max-width:760px){.header{padding:14px 5vw}.menu{display:block}.nav{display:none;position:absolute;top:58px;left:0;right:0;padding:20px 5vw;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.nav.show{display:flex}.hero{padding:120px 6vw 42px}.hero h1{font-size:clamp(64px,17vw,125px);margin:9vh 0}.hero-bottom,.pricing-top,.work-intro{align-items:flex-start;flex-direction:column}.hero-actions{margin-top:15px}section{padding:75px 6vw}.intro-grid,.about-grid{grid-template-columns:1fr;gap:27px}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.tile.wide{grid-column:span 2}.work-trigger{gap:10px}.work-trigger em{display:none}.service-row{grid-template-columns:35px 1fr;gap:10px}.service-row p{grid-column:2}.steps{grid-template-columns:1fr;gap:32px}.price-trigger{grid-template-columns:1fr auto;gap:11px}.price-trigger .amount{grid-column:1}.price-trigger .plus{grid-column:2;grid-row:1/3}.detail-inner{display:block}.detail-inner .btn{margin-top:12px}footer{padding:21px 6vw;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* Refined typography: large editorial titles, clear readable interface copy. */
+body{font-size:16px;font-family:var(--sans)}
+.wordmark{font-family:var(--serif)}.wordmark small{font-size:11px}
+.nav{font-size:12px;gap:22px}
+.eyebrow,.kicker{font-size:12px;letter-spacing:.16em}
+.hero h1{font-size:clamp(54px,10.2vw,150px);line-height:.88;letter-spacing:-.075em;margin:8vh 0 7vh}
+.hero h1 .stroke{padding-left:8vw;-webkit-text-stroke:1.7px var(--cocoa)}
+.hero-copy small{font-size:12px;line-height:1.55;letter-spacing:.09em}
+.btn{font-size:12px;padding:14px 21px;letter-spacing:.09em}
+.intro-copy,.about-copy{font-size:16px;line-height:1.8}
+.pill{font-size:11px;padding:11px 15px;letter-spacing:.08em}
+.work-intro p{font-size:15px;line-height:1.7}
+.work-trigger em{font-size:14px}
+.gallery-note{font-size:14px;line-height:1.65}
+.tile:after{font-size:11px}.tile.video:before{font-size:11px;letter-spacing:.06em}
+.service-row .num{font-size:12px}.service-row p{font-size:15px;line-height:1.75}
+.pricing-top p{font-size:15px;line-height:1.75}
+.tab{font-size:12px;padding:13px 19px;letter-spacing:.08em}
+.detail-inner ul{font-size:15px;line-height:1.9}
+.detail-inner p{font-size:14px;line-height:1.7}
+.revision{font-size:14px;line-height:1.55;padding:12px 15px}
+.price-line{font-size:15px;line-height:1.55;padding:15px 0}
+.step b{font-size:12px;letter-spacing:.1em}.step p{font-size:15px;line-height:1.75}
+.faq summary{font-size:clamp(20px,2vw,25px)}.faq details p{font-size:15px;line-height:1.8}
+footer{font-size:12px;letter-spacing:.04em}
+.gallery-more{grid-column:1/-1;justify-self:start;border:1px solid var(--cocoa);border-radius:40px;background:transparent;color:var(--cocoa);padding:13px 19px;font:600 12px var(--sans);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:transform .25s,background .25s,color .25s}
+.gallery-more:hover{transform:scale(1.04);background:var(--cocoa);color:var(--butter)}
+.more-hidden{display:none!important}.gallery.expanded .more-hidden{display:block!important}
+@media(max-width:760px){.gallery:not(.expanded) .preview-third{display:none!important}}
+@media(max-width:760px){
+ .hero{padding-top:116px}.hero h1{font-size:clamp(42px,11.2vw,82px);line-height:.92;letter-spacing:-.085em;margin:8vh 0 7vh;overflow-wrap:normal}
+ .hero h1 .stroke{padding-left:3vw;-webkit-text-stroke:1.3px var(--cocoa)}
+ .eyebrow{font-size:11px;letter-spacing:.11em}.eyebrow span:last-child{display:none}
+ .hero-copy{font-size:21px}.hero-copy small{font-size:12px}
+ .work-trigger strong{font-size:clamp(24px,7vw,36px)}.work-trigger em{display:none}
+ .gallery{gap:9px}.tile.video:before{left:7px;bottom:7px;padding:8px 9px;font-size:10px}
+ .detail-inner ul{font-size:15px}.price-trigger{padding:18px 15px}.price-trigger strong{font-size:25px}.price-trigger .amount{font-size:22px}
+ .service-row p,.intro-copy,.about-copy,.step p,.faq details p,.pricing-top p{font-size:15px}
+ .kicker{font-size:11px}.pill{font-size:10px}
+}
+@media(max-width:390px){.hero h1{font-size:clamp(39px,10.8vw,48px)}.hero-actions .btn{padding:13px 15px;font-size:11px}}
+
+</style>
+</head>
+<body>
+<header class="header"><a class="wordmark" href="#home">THE VISUAL GIRL<small>AI CREATIVE STUDIO</small></a><button class="menu" id="menu" aria-label="Open menu">☰</button><nav class="nav" id="nav"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></nav></header>
+<main>
+<section class="hero" id="home"><div class="eyebrow"><span>International Portfolio · Worldwide</span><span>Independent creative direction</span></div><h1><span>MAKE YOUR BRAND</span><span class="stroke">IMPOSSIBLE TO</span><span>SCROLL PAST.</span></h1><div class="hero-bottom"><div class="hero-copy">AI-powered product visuals, spokesperson videos and advertising campaigns for brands worldwide.<small>Entirely AI-generated. Creatively directed by me.</small></div><div class="actions"><a class="btn" href="#work">View my work ↘</a><a class="btn filled" href="#contact">Work with me ↗</a></div></div></section>
+<div class="ticker"><span>PRODUCT VISUALS ✳ SOCIAL CONTENT ✳ AI UGC ✳ ADVERTISING ✳ CAMPAIGNS ✳ BRAND VISUALS ✳ &nbsp; PRODUCT VISUALS ✳ SOCIAL CONTENT ✳ AI UGC ✳ ADVERTISING ✳ CAMPAIGNS ✳ BRAND VISUALS ✳ &nbsp;</span></div>
+<section class="reveal"><div class="kicker">01 / The studio</div><div class="intro-grid"><div><h2 class="heading">AI is the tool.<br><i>Creative direction</i><br>is the difference.</h2><div class="intro-lead">I don't just generate images. I create a visual story around your brand, product, audience and message.</div></div><div class="intro-copy">From AI-generated models and environments to product scenes, styling, designs and video — every visual is created using AI and guided by human creative direction. A flexible alternative to many traditional production requirements, without losing sight of the idea.<div class="pills"><span class="pill">Product visuals</span><span class="pill">Social content</span><span class="pill">AI UGC</span><span class="pill">Advertisements</span><span class="pill">Campaigns</span></div></div></div></section>
+<section class="work" id="work"><div class="kicker">02 / Selected work</div><div class="work-intro"><h2 class="heading">A few things<br><i>I've brought to life.</i></h2><p>Choose a category to explore. Tap any image to view it larger. Click a video to play with sound.</p></div><div class="accordion" id="workAccordion">
+<div class="work-item open"><button class="work-trigger" aria-expanded="true"><strong>Product Photography</strong><em>Product scenes / lifestyle / model-led</em><span class="plus">+</span></button><div class="work-panel"><div class="work-panel-inner"><div class="gallery" data-gallery="products"></div></div></div></div>
+<div class="work-item"><button class="work-trigger" aria-expanded="false"><strong>Social Content</strong><em>Posts / carousels / brand storytelling</em><span class="plus">+</span></button><div class="work-panel"><div class="work-panel-inner"><div class="gallery" data-gallery="social"></div></div></div></div>
+<div class="work-item"><button class="work-trigger" aria-expanded="false"><strong>Video & AI UGC</strong><em>Tap to play with sound</em><span class="plus">+</span></button><div class="work-panel"><div class="work-panel-inner"><div class="gallery" data-gallery="videos"></div><p class="gallery-note">Click a video preview to play with sound. Playback controls are available in the viewer.</p></div></div></div>
+<div class="work-item"><button class="work-trigger" aria-expanded="false"><strong>Campaigns</strong><em>Creative concepts / social adaptations</em><span class="plus">+</span></button><div class="work-panel"><div class="work-panel-inner"><div class="gallery" data-gallery="campaigns"></div></div></div></div>
+<div class="work-item"><button class="work-trigger" aria-expanded="false"><strong>Brand Visuals</strong><em>Identity systems / visual direction</em><span class="plus">+</span></button><div class="work-panel"><div class="work-panel-inner"><div class="gallery" data-gallery="brands"></div></div></div></div>
+</div></section>
+<section class="about" id="about"><div class="kicker">03 / Why The Visual Girl</div><h2 class="heading">Your idea deserves<br><i>more than a prompt.</i></h2><div class="about-grid"><div class="intro-lead">I'm the creative director behind the visuals — shaping the concept, story and details before AI brings the world to life.</div><div class="about-copy">Every project starts with the brand, the audience, the product, the message and the campaign objective. From there, I develop the visual direction and use AI-powered production to make the idea tangible.<br><br>The aim is not simply to make something that looks good. It's to create content the brand can actually use — across product pages, social platforms and campaigns.<div class="pills"><span class="pill">Concept-led</span><span class="pill">AI-powered</span><span class="pill">Brand-focused</span></div></div></div></section>
+<section class="services" id="services"><div class="kicker">04 / What I create</div><h2 class="heading">Creative services,<br><i>built around your brand.</i></h2><div class="service-list"><div class="service-row"><span class="num">01</span><h3>Product visuals</h3><p>Product photography, lifestyle scenes and model-led imagery for digital storefronts, launches and social platforms.</p></div><div class="service-row"><span class="num">02</span><h3>Social content</h3><p>Social graphics, carousels and visual storytelling designed to help your brand show up consistently.</p></div><div class="service-row"><span class="num">03</span><h3>AI UGC & video</h3><p>AI-generated UGC-style videos, product demonstrations and short-form video concepts.</p></div><div class="service-row"><span class="num">04</span><h3>Advertising</h3><p>Product advertisements and short-form creative designed around a clear message and call to action.</p></div><div class="service-row"><span class="num">05</span><h3>Campaigns & brand visuals</h3><p>Creative concepts, art direction, campaign assets and visual identity systems.</p></div></div></section>
+<section class="pricing" id="pricing">
+<div class="kicker">05 / International rates</div>
+<div class="pricing-top">
+<h2 class="heading">Creative work,<br><i>clear investment.</i></h2>
+<p>International starting prices are shown in US dollars (USD). Open any service to see what's included. Every project includes two rounds of revisions.</p>
+</div>
+<div class="service-group">
+<h3>International services · USD</h3>
+<div class="price-card">
+<button class="price-trigger" aria-expanded="false"><strong>15–20 sec AI video ad</strong><span class="amount">$100</span><span class="plus">+</span></button>
+<div class="price-details"><div><div class="detail-inner"><div><ul><li>One AI-generated short-form video advertisement</li><li>15–20 seconds in length</li><li>Creative direction tailored to the brand brief</li><li>Two rounds of revisions</li></ul><p>For product launches, social ads and brand storytelling.</p></div><a class="btn filled" href="https://wa.me/2348168038630?text=Hello%20The%20Visual%20Girl%2C%20I%27m%20interested%20in%20the%2015%E2%80%9320%20second%20AI%20video%20ad.">Enquire about this ↗</a></div></div></div>
+</div>
+<div class="price-card">
+<button class="price-trigger" aria-expanded="false"><strong>30 sec commercial</strong><span class="amount">$180</span><span class="plus">+</span></button>
+<div class="price-details"><div><div class="detail-inner"><div><ul><li>One AI-generated 30-second commercial</li><li>Concept and visual direction based on your brief</li><li>Product-focused storytelling</li><li>Two rounds of revisions</li></ul><p>For brands looking for a more developed commercial story.</p></div><a class="btn filled" href="https://wa.me/2348168038630?text=Hello%20The%20Visual%20Girl%2C%20I%27m%20interested%20in%20a%2030%20second%20commercial.">Enquire about this ↗</a></div></div></div>
+</div>
+<div class="price-card">
+<button class="price-trigger" aria-expanded="false"><strong>3 product visuals</strong><span class="amount">$75</span><span class="plus">+</span></button>
+<div class="price-details"><div><div class="detail-inner"><div><ul><li>Three AI-generated product visuals</li><li>Creative styling and art direction</li><li>Visual approach tailored to the product and brand</li><li>Two rounds of revisions</li></ul><p>A small, cohesive set of product images for digital use.</p></div><a class="btn filled" href="https://wa.me/2348168038630?text=Hello%20The%20Visual%20Girl%2C%20I%27m%20interested%20in%20three%20product%20visuals.">Enquire about this ↗</a></div></div></div>
+</div>
+<div class="price-card">
+<button class="price-trigger" aria-expanded="false"><strong>AI spokesperson video</strong><span class="amount">$120</span><span class="plus">+</span></button>
+<div class="price-details"><div><div class="detail-inner"><div><ul><li>One AI-generated spokesperson-led video</li><li>Brand messaging shaped around your brief</li><li>AI-generated model and visual environment</li><li>Two rounds of revisions</li></ul><p>For product explainers, brand introductions and promotional messages.</p></div><a class="btn filled" href="https://wa.me/2348168038630?text=Hello%20The%20Visual%20Girl%2C%20I%27m%20interested%20in%20an%20AI%20spokesperson%20video.">Enquire about this ↗</a></div></div></div>
+</div>
+<div class="price-card">
+<button class="price-trigger" aria-expanded="false"><strong>3-video advertising package</strong><span class="amount">$350</span><span class="plus">+</span></button>
+<div class="price-details"><div><div class="detail-inner"><div><ul><li>Three AI-generated advertising videos</li><li>Consistent creative direction across the set</li><li>Concepts tailored to your campaign brief</li><li>Two rounds of revisions</li></ul><p>For brands that need multiple creative variations or a short ad series. Video durations and deliverables are confirmed in the project brief.</p></div><a class="btn filled" href="https://wa.me/2348168038630?text=Hello%20The%20Visual%20Girl%2C%20I%27m%20interested%20in%20the%203-video%20advertising%20package.">Enquire about this ↗</a></div></div></div>
+</div>
+<div class="price-card">
+<button class="price-trigger" aria-expanded="false"><strong>Complete creative campaign</strong><span class="amount">From $500</span><span class="plus">+</span></button>
+<div class="price-details"><div><div class="detail-inner"><div><ul><li>Creative concept development</li><li>Art direction</li><li>Campaign visuals</li><li>Social media adaptations</li><li>Two rounds of revisions</li></ul><p>Custom scope and final quotation are based on the brief, creative requirements and agreed deliverables.</p></div><a class="btn filled" href="https://wa.me/2348168038630?text=Hello%20The%20Visual%20Girl%2C%20I%27d%20like%20to%20discuss%20a%20complete%20creative%20campaign.">Discuss a campaign ↗</a></div></div></div>
+</div>
+</div>
+<div class="revision">All rates are starting prices in USD. Two rounds of revisions are included. Additional deliverables, major changes outside the approved brief or extended usage requirements may be quoted separately.</div>
+</section>
+<section class="process"><div class="kicker">06 / The process</div><h2 class="heading">From idea<br><i>to visual impact.</i></h2><div class="steps"><div class="step"><b>01 / THE BRIEF</b><h3>Share your idea</h3><p>Tell me about your brand, audience, product and what you want the content to achieve.</p></div><div class="step"><b>02 / THE DIRECTION</b><h3>Shape the concept</h3><p>I develop the creative direction, visual style and production approach for your project.</p></div><div class="step"><b>03 / THE DELIVERY</b><h3>Bring it to life</h3><p>Your AI-generated visuals are created, refined and delivered in the agreed formats.</p></div></div></section>
+<section class="faq"><div class="kicker">07 / Good to know</div><h2 class="heading">A few things<br><i>you might wonder.</i></h2><details><summary>Is the content entirely AI-generated?</summary><p>Yes. Models, environments, styling, product scenes, designs and video elements are generated using AI, with creative direction and quality control led by The Visual Girl.</p></details><details><summary>Do packages include revisions?</summary><p>Yes. Every package and individual service includes two rounds of revisions. Additional rounds or changes beyond the agreed brief may attract an extra fee.</p></details><details><summary>Can I request something outside these packages?</summary><p>Absolutely. Custom projects are welcome. Share your brief and the deliverables you need, and a tailored quote can be prepared.</p></details><details><summary>Can I use the content on my brand platforms?</summary><p>Usage and delivery formats will be agreed as part of each project. Any extended usage or additional adaptations can be discussed when preparing your quote.</p></details><details><summary>How do I get started?</summary><p>Choose a package or individual service, then send an enquiry through WhatsApp or email with a little information about your brand and requirements.</p></details></section>
+<section class="contact" id="contact"><div class="kicker">08 / Let's create</div><h2 class="heading">Have a product,<br>an idea or a vision?<br><i>Let's bring it to life.</i></h2><div class="contact-row"><div class="contact-links"><a class="btn" href="https://wa.me/2348168038630">WhatsApp ↗</a><a class="btn" href="mailto:adeolaferanmi15@gmail.com">Email ↗</a><a class="btn" href="https://www.instagram.com/_thevisualgirl/" target="_blank" rel="noopener">Instagram ↗</a></div><div class="signature">AI is the tool. Creative direction is the difference.</div></div></section>
+</main><footer><span>© 2026 THE VISUAL GIRL — AI CREATIVE STUDIO</span><span>Entirely AI-generated. Creatively directed by me.</span></footer>
+<div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-label="Project viewer"><button class="viewer-close" aria-label="Close viewer">×</button><div id="viewerBody"></div><div class="viewer-caption" id="viewerCaption"></div></div>
+<script>
+const I='../assets/images/',V='../assets/videos/',P='../assets/posters/';
+const projects={
+products:[
+['TOBIXVAL — Nourishing Lotion', 'nourishing-lotion-pump-close-up.webp'],
+['GLOWIE — Coral Serum Product Ad','glowie-cosmetics-coral-serum-ad.webp'],
+['GLOWIE — Brightening Serum Trio','glowie-brightening-serum-trio.webp'],
+['GLOWIE — Serum Still Life','glow-serum-in-heartlight.webp'],
+['VISUALÉ — Hair Butter','a6d43091-6014-476a-8dc9-4998d2962759.webp'],
+['VISUALÉ — Haircare Product Scene','55142fa0-6e1f-4f19-9084-9c23fc61c5ae.webp'],
+['KUI — Haircare Collection','6f0f86e6-1626-412e-a9f7-0486ba5b221f.webp'],
+['VISUALÉ — Strengthening Shampoo','visual-strengthening-shampoo-in-pink-tiles-1.webp'],
+['VISUALÉ — Haircare Collection on Sage','visual-haircare-on-sage-steps-1.webp'],
+['VISUALÉ — Anti-Dandruff Shampoo','luxurious-pink-anti-dandruff-shampoo-1.webp'],
+['THE LENGTH CO. — Moisture Cream','the-length-co-moisture-cream-showcase-5.webp'],
+['THE LENGTH CO. — Product Campaign','the-length-co-beauty-campaign-triptych.webp'],
+['THE LENGTH CO. — Olive Green Collection','premium-olive-green-haircare-collection-5.webp'],
+['THE LENGTH CO. — Hydrate Spray','natural-glow-with-hydrate-spray-3.webp'],
+['THE LENGTH CO. — Hair Growth Oil','freckled-glow-and-hair-growth-oil-4.webp']
+],
+social:[
+['GLOWIE — Real Glow Campaign','glowie-cosmetics-real-glow-healthier-skin-1.webp'],
+['VISUALÉ — Voluminous Hair Social Post','d4e89555-61d8-4d17-9bad-eb486b24274d.webp'],
+['LUMI BY LILY — Billboard Concept','91025dce-e79c-4cac-b119-912beb879d04-1.webp'],
+['VISUALÉ — Instagram Carousel Template','visual-pink-haircare-carousel-mockup-1.webp'],
+['VISUALÉ — Naturally Fights Dandruff','visual-naturally-fights-dandruff-1.webp'],
+['VISUALÉ — Haircare Content Carousel','visual-haircare-content-carousel-1.webp'],
+['THE LENGTH CO. — Three-Step Ritual','three-step-ritual-for-healthy-curls-4.webp'],
+['THE LENGTH CO. — Hair Investment Poster','the-length-co-natural-haircare-ad-4.webp'],
+['THE LENGTH CO. — Haircare Routine Grid','the-length-co-haircare-routine-grid-5.webp'],
+['THE LENGTH CO. — Editorial Collage','the-length-co-haircare-editorial-collage-1-1.webp'],
+['THE LENGTH CO. — New Month Poster','happy-new-month-haircare-poster-6.webp'],
+['THE LENGTH CO. — Haircare Heroes','haircare-heroes-product-trio-1-4.webp']
+],
+videos:[
+['TOBIXVAL — Model Product Video','tobixval-model.webp','tobixval-model.mp4'],
+['GLOWIE — Model Product Video','glow-model.webp','glow-model.mp4'],
+['IVANII — Drink Model Video','drink-model.webp','drink-model.mp4'],
+['Haircare Video — Project 01','video-1.webp','video-1.mp4'],
+['Haircare Video — Project 02','video-2.webp','video-2.mp4'],
+['Haircare Video — Project 03','video-3.webp','video-3.mp4'],
+['AI 3D Commercial','ai-3d-commercial.webp','ai-3d-commercial.mp4'],
+['Character Visual Video','character-visual.webp','character-visual.mp4'],
+['CHECKERS CUSTARD — Breakfast Commercial','checkers-custard-ad-poster.webp','checkers-custard-ad.mp4'],
+['Video Project — 1024','video-1.webp','1024-1-2.mp4']
+],
+campaigns:[['IVANII — More Strawberry Campaign','ivanii-strawberry-more-campaign.webp']],
+brands:[['VISUALÉ — Haircare Brand Visual System','visual-haircare-brand-moodboard-1.webp'],['THE LENGTH CO. — Brand Style Guide','the-length-co-brand-style-guide-2.webp']]
+};
+const viewer=document.getElementById('viewer'),viewerBody=document.getElementById('viewerBody'),viewerCaption=document.getElementById('viewerCaption');
+function openViewer(title,src,isVideo){viewerBody.replaceChildren();viewerCaption.textContent=title;const el=document.createElement(isVideo?'video':'img');el.src=src;if(isVideo){el.controls=true;el.autoplay=true;el.playsInline=true;el.muted=false;}else{el.alt=title;}viewerBody.append(el);viewer.classList.add('show');document.body.style.overflow='hidden';if(isVideo)el.play().catch(()=>{});}
+function closeViewer(){const v=viewerBody.querySelector('video');if(v)v.pause();viewer.classList.remove('show');viewerBody.replaceChildren();document.body.style.overflow='';}
+viewer.querySelector('.viewer-close').addEventListener('click',closeViewer);viewer.addEventListener('click',e=>{if(e.target===viewer)closeViewer()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeViewer()});
+for(const [cat,list] of Object.entries(projects)){const gallery=document.querySelector('[data-gallery="'+cat+'"]');if(!gallery)continue;list.forEach((project,index)=>{const [title,thumb,video]=project;const card=document.createElement('button');card.type='button';card.className='tile'+(cat==='videos'?' video':'')+(cat==='campaigns'?' wide':'')+(index>=3?' more-hidden':'')+(index===2?' preview-third':'');card.setAttribute('aria-label',cat==='videos'?'Play '+title+' with sound':'View '+title);const img=document.createElement('img');img.src=(cat==='videos'?P:I)+thumb;img.alt=title;img.loading='lazy';img.decoding='async';img.fetchPriority='low';card.append(img);card.addEventListener('click',()=>openViewer(title,(video?V:I)+(video||thumb),Boolean(video)));gallery.append(card);});if(list.length>3){const more=document.createElement('button');more.type='button';more.className='gallery-more';more.textContent='VIEW ALL '+list.length+' PROJECTS ↓';more.setAttribute('aria-expanded','false');more.addEventListener('click',()=>{const expanded=gallery.classList.toggle('expanded');more.setAttribute('aria-expanded',String(expanded));more.textContent=expanded?'SHOW FEWER ↑':'VIEW ALL '+list.length+' PROJECTS ↓';});gallery.append(more);}}
+document.querySelectorAll('.work-trigger').forEach(button=>button.addEventListener('click',()=>{const item=button.closest('.work-item'),open=!item.classList.contains('open');document.querySelectorAll('.work-item').forEach(node=>{node.classList.remove('open');node.querySelector('.work-trigger').setAttribute('aria-expanded','false')});if(open){item.classList.add('open');button.setAttribute('aria-expanded','true')}}));
+document.querySelectorAll('.tab').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(tab=>tab.classList.toggle('active',tab===button));document.querySelectorAll('.price-panel').forEach(panel=>panel.classList.toggle('active',panel.id===button.dataset.tab))}));
+document.querySelectorAll('.price-trigger').forEach(button=>button.addEventListener('click',()=>{const card=button.closest('.price-card'),open=!card.classList.contains('open');card.classList.toggle('open',open);button.setAttribute('aria-expanded',String(open))}));
+const menu=document.getElementById('menu'),nav=document.getElementById('nav');menu.addEventListener('click',()=>nav.classList.toggle('show'));nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>nav.classList.remove('show')));
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body></html>
