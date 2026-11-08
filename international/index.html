@@ -131,6 +131,37 @@ footer{font-size:12px;letter-spacing:.04em}
   .hero .hero-title__bridge{font-size:.26em;letter-spacing:0}
 }
 
+/* Staggered motion for the hero headline */
+.hero .hero-title > span{
+  opacity:0;
+  will-change:opacity,transform,clip-path;
+}
+.hero .hero-title__main{
+  animation:vgRevealUp .95s cubic-bezier(.2,.72,.2,1) .12s both;
+}
+.hero .hero-title__bridge{
+  animation:vgRevealSide .8s cubic-bezier(.2,.72,.2,1) .52s both;
+}
+.hero .hero-title__voice{
+  animation:vgRevealUp 1s cubic-bezier(.2,.72,.2,1) .82s both;
+}
+@keyframes vgRevealUp{
+  0%{opacity:0;transform:translate3d(0,34px,0);clip-path:inset(0 0 100% 0)}
+  100%{opacity:1;transform:translate3d(0,0,0);clip-path:inset(0 0 0 0)}
+}
+@keyframes vgRevealSide{
+  0%{opacity:0;transform:translate3d(-24px,0,0);clip-path:inset(0 100% 0 0)}
+  100%{opacity:1;transform:translate3d(0,0,0);clip-path:inset(0 0 0 0)}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero .hero-title > span{
+    opacity:1;
+    transform:none;
+    clip-path:none;
+    animation:none!important;
+    will-change:auto;
+  }
+}
 </style>
 </head>
 <body>
