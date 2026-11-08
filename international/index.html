@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#C4DAE8">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,500;1,6..96,600&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
 <meta name="description" content="The Visual Girl — creative production for brands: content planning PDFs, video editing, AI-assisted advertising, campaign production and product visuals.">
 <title>The Visual Girl — International AI Creative Studio</title>
 <style>
@@ -65,12 +65,99 @@ footer{font-size:12px;letter-spacing:.04em}
 }
 @media(max-width:390px){.hero h1{font-size:clamp(39px,10.8vw,48px)}.hero-actions .btn{padding:13px 15px;font-size:11px}}
 
+
+/* Signature hero typography */
+.hero .hero-title{
+  width:100%;
+  margin:clamp(44px,7vh,88px) 0 clamp(42px,6vh,72px);
+  font-family:'Bodoni Moda',Georgia,serif;
+  font-size:clamp(76px,12.4vw,176px);
+  font-weight:700;
+  line-height:.79;
+  letter-spacing:-.085em;
+  text-transform:uppercase;
+}
+.hero .hero-title__main{
+  display:block;
+  font-weight:700;
+  letter-spacing:-.09em;
+}
+.hero .hero-title__bridge{
+  display:flex;
+  align-items:center;
+  gap:clamp(10px,1.5vw,22px);
+  width:min(78%,850px);
+  margin:.2em 0 .12em clamp(12px,10.5vw,155px);
+  font:600 clamp(11px,1.18vw,17px)/1.2 var(--sans);
+  letter-spacing:.2em;
+  white-space:nowrap;
+}
+.hero .hero-title__bridge>span:first-child{display:block}
+.hero .hero-title__rule{
+  display:block;
+  flex:1;
+  min-width:24px;
+  max-width:170px;
+  height:1px;
+  background:var(--cocoa);
+  opacity:.65;
+}
+.hero .hero-title__voice{
+  display:block;
+  text-align:right;
+  padding-right:4.5vw;
+  font-family:'Bodoni Moda',Georgia,serif;
+  font-size:1.08em;
+  font-weight:500;
+  font-style:italic;
+  line-height:.82;
+  letter-spacing:-.09em;
+  color:transparent;
+  -webkit-text-stroke:1.45px var(--cocoa);
+}
+.hero .hero-title__article{
+  display:inline-block;
+  margin-right:.22em;
+  vertical-align:middle;
+  color:var(--cocoa);
+  -webkit-text-stroke:0;
+  font:600 .17em/1 var(--sans);
+  font-style:normal;
+  letter-spacing:.12em;
+}
+.hero .hero-title__voice i{font-style:italic}
+@media(max-width:760px){
+  .hero .hero-title{
+    font-size:clamp(42px,11.8vw,88px);
+    line-height:.84;
+    letter-spacing:-.09em;
+    margin:clamp(42px,8vh,68px) 0 clamp(40px,7vh,58px);
+  }
+  .hero .hero-title__bridge{
+    width:100%;
+    gap:8px;
+    margin:.24em 0 .16em clamp(0px,3vw,15px);
+    font-size:clamp(9px,2.45vw,13px);
+    letter-spacing:.12em;
+  }
+  .hero .hero-title__rule{min-width:18px;max-width:90px}
+  .hero .hero-title__voice{
+    padding-right:1vw;
+    font-size:1.04em;
+    -webkit-text-stroke:1.05px var(--cocoa);
+  }
+}
+@media(max-width:390px){
+  .hero .hero-title{font-size:clamp(39px,11.5vw,46px)}
+  .hero .hero-title__bridge{font-size:9px;letter-spacing:.1em;gap:6px}
+}
+
 </style>
 </head>
 <body>
 <header class="header"><a class="wordmark" href="#home">THE VISUAL GIRL<small>AI CREATIVE STUDIO</small></a><button class="menu" id="menu" aria-label="Open menu">☰</button><nav class="nav" id="nav"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav></header>
 <main>
-<section class="hero" id="home"><div class="eyebrow"><span>International Portfolio · Worldwide</span><span>Independent creative direction</span></div><h1><span>MAKE YOUR BRAND</span><span class="stroke">IMPOSSIBLE TO</span><span>SCROLL PAST.</span></h1><div class="hero-bottom"><div class="hero-copy">Creative production for brands — from content planning and short-form video editing to AI-assisted advertising, campaign assets and product visuals.<small class="availability">Available for freelance projects · Worldwide</small><small>Planned with purpose. Produced with creative direction.</small></div><div class="actions"><a class="btn" href="#work">View my work ↘</a><a class="btn filled" href="#contact">Work with me ↗</a></div></div></section>
+<section class="hero" id="home"><div class="eyebrow"><span>International Portfolio · Worldwide</span><span>Independent creative direction</span></div><h1 class="hero-title" aria-label="Creativity that gives your brand a voice."><span class="hero-title__main">CREATIVITY</span><span class="hero-title__bridge"><span>THAT GIVES YOUR BRAND</span><span class="hero-title__rule" aria-hidden="true"></span></span><span class="hero-title__voice"><span class="hero-title__article">A</span><i>VOICE.</i></span></h1><div class="hero-bottom"><div class="hero-copy">Creative production for brands — from content planning and short-form video editing to AI-assisted advertising, campaign assets and product visuals.<small class="availability">Available for freelance projects · Worldwide</small><small>Planned with purpose. Produced with creative direction.</small></div><div class="actions"><a class="btn" href="#work">View my work ↘</a><a class="btn filled" href="#contact">Work with me ↗</a></div></div></section>
 <div class="ticker"><span>CONTENT PLANNING ✳ VIDEO EDITING ✳ ADVERTISING ✳ CAMPAIGNS ✳ PRODUCT VISUALS ✳ &nbsp; CONTENT PLANNING ✳ VIDEO EDITING ✳ ADVERTISING ✳ CAMPAIGNS ✳ PRODUCT VISUALS ✳ &nbsp;</span></div>
 <section class="reveal"><div class="kicker">01 / The studio</div><div class="intro-grid"><div><h2 class="heading">Plan the idea.<br><i>Shape the story.</i><br>Bring it to life.</h2><div class="intro-lead">I help brands turn what they want to communicate into clear content plans, well-crafted videos and cohesive creative assets.</div></div><div class="intro-copy">From monthly content calendars and scripts to editing existing footage, producing AI-assisted advertisements and creating campaign visuals, each project starts with your brand, audience and objective. I bring creative thinking and production together — choosing the right approach for the work, rather than forcing every brief through the same tool.<div class="pills"><span class="pill">Content planning</span><span class="pill">Video editing</span><span class="pill">Advertising</span><span class="pill">Campaigns</span><span class="pill">Product visuals</span></div></div></div></section>
 <section class="work" id="work"><div class="kicker">02 / Selected work</div><div class="work-intro"><h2 class="heading">A few things<br><i>I've brought to life.</i></h2><p>Choose a category to explore. Tap any image to view it larger. Click a video to play with sound.</p></div><div class="accordion" id="workAccordion">
