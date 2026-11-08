@@ -66,90 +66,71 @@ footer{font-size:12px;letter-spacing:.04em}
 @media(max-width:390px){.hero h1{font-size:clamp(39px,10.8vw,48px)}.hero-actions .btn{padding:13px 15px;font-size:11px}}
 
 
-/* Signature hero typography */
+/* One-typeface hero: hierarchy comes from scale, alignment and italic contrast. */
 .hero .hero-title{
   width:100%;
-  margin:clamp(44px,7vh,88px) 0 clamp(42px,6vh,72px);
+  margin:clamp(44px,7vh,82px) 0 clamp(42px,6vh,68px);
+  color:var(--cocoa);
   font-family:'Bodoni Moda',Georgia,serif;
-  font-size:clamp(76px,12.4vw,176px);
+  font-size:clamp(76px,12.2vw,174px);
   font-weight:700;
-  line-height:.79;
+  line-height:.82;
   letter-spacing:-.085em;
   text-transform:uppercase;
 }
 .hero .hero-title__main{
   display:block;
+  font-family:inherit;
   font-weight:700;
   letter-spacing:-.09em;
 }
 .hero .hero-title__bridge{
-  display:flex;
-  align-items:center;
-  gap:clamp(10px,1.5vw,22px);
-  width:min(78%,850px);
-  margin:.2em 0 .12em clamp(12px,10.5vw,155px);
-  font:600 clamp(11px,1.18vw,17px)/1.2 var(--sans);
-  letter-spacing:.2em;
-  white-space:nowrap;
-}
-.hero .hero-title__bridge>span:first-child{display:block}
-.hero .hero-title__rule{
   display:block;
-  flex:1;
-  min-width:24px;
-  max-width:170px;
-  height:1px;
-  background:var(--cocoa);
-  opacity:.65;
+  width:100%;
+  margin:.2em 0 .18em clamp(5px,3.5vw,52px);
+  font-family:inherit;
+  font-size:.285em;
+  font-weight:500;
+  font-style:normal;
+  line-height:1.25;
+  letter-spacing:.075em;
+  white-space:nowrap;
 }
 .hero .hero-title__voice{
   display:block;
-  text-align:right;
   padding-right:4.5vw;
-  font-family:'Bodoni Moda',Georgia,serif;
-  font-size:1.08em;
+  text-align:right;
+  font-family:inherit;
+  font-size:1.04em;
   font-weight:500;
   font-style:italic;
-  line-height:.82;
-  letter-spacing:-.09em;
-  color:transparent;
-  -webkit-text-stroke:1.45px var(--cocoa);
-}
-.hero .hero-title__article{
-  display:inline-block;
-  margin-right:.22em;
-  vertical-align:middle;
+  line-height:.88;
+  letter-spacing:-.085em;
   color:var(--cocoa);
-  -webkit-text-stroke:0;
-  font:600 .17em/1 var(--sans);
-  font-style:normal;
-  letter-spacing:.12em;
 }
-.hero .hero-title__voice i{font-style:italic}
 @media(max-width:760px){
   .hero .hero-title{
-    font-size:clamp(42px,11.8vw,88px);
-    line-height:.84;
+    font-size:clamp(43px,11.8vw,88px);
+    line-height:.86;
     letter-spacing:-.09em;
     margin:clamp(42px,8vh,68px) 0 clamp(40px,7vh,58px);
   }
   .hero .hero-title__bridge{
-    width:calc(100% - clamp(0px,3vw,15px));
-    gap:8px;
-    margin:.24em 0 .16em clamp(0px,3vw,15px);
-    font-size:clamp(9px,2.45vw,13px);
-    letter-spacing:.12em;
+    width:calc(100% - 8px);
+    margin:.24em 0 .2em 4px;
+    font-size:.285em;
+    letter-spacing:.015em;
+    white-space:normal;
   }
-  .hero .hero-title__rule{min-width:18px;max-width:90px}
   .hero .hero-title__voice{
     padding-right:1vw;
-    font-size:1.04em;
-    -webkit-text-stroke:1.05px var(--cocoa);
+    font-size:1.02em;
+    letter-spacing:-.09em;
   }
 }
 @media(max-width:390px){
-  .hero .hero-title{font-size:clamp(39px,11.5vw,46px)}
-  .hero .hero-title__bridge{font-size:9px;letter-spacing:.1em;gap:6px}
+  .hero .hero-title{font-size:clamp(38px,11.3vw,45px)}
+  .hero .hero-title__bridge{font-size:.26em;letter-spacing:0}
 }
 
 </style>
@@ -157,7 +138,7 @@ footer{font-size:12px;letter-spacing:.04em}
 <body>
 <header class="header"><a class="wordmark" href="#home">THE VISUAL GIRL<small>AI CREATIVE STUDIO</small></a><button class="menu" id="menu" aria-label="Open menu">☰</button><nav class="nav" id="nav"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav></header>
 <main>
-<section class="hero" id="home"><div class="eyebrow"><span>International Portfolio · Worldwide</span><span>Independent creative direction</span></div><h1 class="hero-title" aria-label="Creativity that gives your brand a voice."><span class="hero-title__main">CREATIVITY</span><span class="hero-title__bridge"><span>THAT GIVES YOUR BRAND</span><span class="hero-title__rule" aria-hidden="true"></span></span><span class="hero-title__voice"><span class="hero-title__article">A</span><i>VOICE.</i></span></h1><div class="hero-bottom"><div class="hero-copy">Creative production for brands — from content planning and short-form video editing to AI-assisted advertising, campaign assets and product visuals.<small class="availability">Available for freelance projects · Worldwide</small><small>Planned with purpose. Produced with creative direction.</small></div><div class="actions"><a class="btn" href="#work">View my work ↘</a><a class="btn filled" href="#contact">Work with me ↗</a></div></div></section>
+<section class="hero" id="home"><div class="eyebrow"><span>International Portfolio · Worldwide</span><span>Independent creative direction</span></div><h1 class="hero-title" aria-label="Creativity that gives your brand a voice."><span class="hero-title__main">CREATIVITY</span><span class="hero-title__bridge">THAT GIVES YOUR BRAND</span><span class="hero-title__voice">A VOICE.</span></h1><div class="hero-bottom"><div class="hero-copy">Creative production for brands — from content planning and short-form video editing to AI-assisted advertising, campaign assets and product visuals.<small class="availability">Available for freelance projects · Worldwide</small><small>Planned with purpose. Produced with creative direction.</small></div><div class="actions"><a class="btn" href="#work">View my work ↘</a><a class="btn filled" href="#contact">Work with me ↗</a></div></div></section>
 <div class="ticker"><span>CONTENT PLANNING ✳ VIDEO EDITING ✳ ADVERTISING ✳ CAMPAIGNS ✳ PRODUCT VISUALS ✳ &nbsp; CONTENT PLANNING ✳ VIDEO EDITING ✳ ADVERTISING ✳ CAMPAIGNS ✳ PRODUCT VISUALS ✳ &nbsp;</span></div>
 <section class="reveal"><div class="kicker">01 / The studio</div><div class="intro-grid"><div><h2 class="heading">Plan the idea.<br><i>Shape the story.</i><br>Bring it to life.</h2><div class="intro-lead">I help brands turn what they want to communicate into clear content plans, well-crafted videos and cohesive creative assets.</div></div><div class="intro-copy">From monthly content calendars and scripts to editing existing footage, producing AI-assisted advertisements and creating campaign visuals, each project starts with your brand, audience and objective. I bring creative thinking and production together — choosing the right approach for the work, rather than forcing every brief through the same tool.<div class="pills"><span class="pill">Content planning</span><span class="pill">Video editing</span><span class="pill">Advertising</span><span class="pill">Campaigns</span><span class="pill">Product visuals</span></div></div></div></section>
 <section class="work" id="work"><div class="kicker">02 / Selected work</div><div class="work-intro"><h2 class="heading">A few things<br><i>I've brought to life.</i></h2><p>Choose a category to explore. Tap any image to view it larger. Click a video to play with sound.</p></div><div class="accordion" id="workAccordion">
