@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#C4DAE8">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
 <meta name="description" content="The Visual Girl — creative production for brands: content planning PDFs, video editing, AI-assisted advertising, campaign production and product visuals.">
 <title>The Visual Girl — International AI Creative Studio</title>
 <style>
@@ -66,67 +66,72 @@ footer{font-size:12px;letter-spacing:.04em}
 @media(max-width:390px){.hero h1{font-size:clamp(39px,10.8vw,48px)}.hero-actions .btn{padding:13px 15px;font-size:11px}}
 
 
-/* Strong, highly legible hero typography: one Anton display family throughout. */
+/* Solid, highly legible hero typography: Montserrat Black throughout. */
 .hero .hero-title{
   width:100%;
   margin:clamp(44px,7vh,82px) 0 clamp(42px,6vh,68px);
-  color:var(--cocoa);
-  font-family:'Anton',Impact,sans-serif;
-  font-size:clamp(78px,12.3vw,176px);
-  font-weight:400;
-  line-height:.9;
-  letter-spacing:.005em;
+  color:var(--cocoa) !important;
+  -webkit-text-fill-color:var(--cocoa) !important;
+  -webkit-text-stroke:0 !important;
+  font-family:'Montserrat',Arial,sans-serif !important;
+  font-size:clamp(68px,10.6vw,150px);
+  font-weight:900 !important;
+  line-height:.94;
+  letter-spacing:-.075em;
   text-transform:uppercase;
 }
 .hero .hero-title > span{
   display:block;
-  font-family:'Anton',Impact,sans-serif !important;
-  color:var(--cocoa);
-  font-weight:400;
-  font-style:normal;
+  color:var(--cocoa) !important;
+  -webkit-text-fill-color:var(--cocoa) !important;
+  -webkit-text-stroke:0 !important;
+  font-family:'Montserrat',Arial,sans-serif !important;
+  font-weight:900 !important;
+  font-style:normal !important;
+  text-shadow:none !important;
 }
 .hero .hero-title__main{
   font-size:1em;
-  letter-spacing:.005em;
+  letter-spacing:-.075em;
 }
 .hero .hero-title__bridge{
   width:100%;
-  margin:.19em 0 .18em clamp(5px,3.5vw,52px);
-  font-size:.32em;
-  line-height:1.2;
-  letter-spacing:.045em;
+  margin:.2em 0 .18em clamp(5px,3.5vw,52px);
+  font-size:.30em;
+  line-height:1.25;
+  letter-spacing:.015em;
   white-space:nowrap;
 }
 .hero .hero-title__voice{
   padding-right:4.5vw;
   text-align:right;
-  font-size:1.04em;
-  line-height:.94;
-  letter-spacing:.005em;
+  font-size:1.02em;
+  line-height:.96;
+  letter-spacing:-.075em;
 }
 @media(max-width:760px){
   .hero .hero-title{
-    font-size:clamp(46px,12.2vw,92px);
-    line-height:.92;
-    letter-spacing:0;
+    font-size:clamp(39px,10.5vw,79px);
+    line-height:.98;
+    letter-spacing:-.075em;
     margin:clamp(42px,8vh,68px) 0 clamp(40px,7vh,58px);
   }
   .hero .hero-title__bridge{
     width:calc(100% - 8px);
     margin:.24em 0 .2em 4px;
-    font-size:.29em;
-    letter-spacing:.015em;
+    font-size:.28em;
+    letter-spacing:0;
     white-space:normal;
   }
   .hero .hero-title__voice{
     padding-right:1vw;
-    font-size:1.04em;
-    letter-spacing:0;
+    font-size:1.02em;
+    letter-spacing:-.075em;
   }
 }
 @media(max-width:390px){
-  .hero .hero-title{font-size:clamp(40px,11.7vw,47px)}
-  .hero .hero-title__bridge{font-size:.27em;letter-spacing:0}
+  .hero .hero-title{font-size:clamp(35px,10.2vw,41px)}
+  .hero .hero-title__bridge{font-size:.26em;letter-spacing:0}
 }
 /* Staggered motion for the hero headline */
 .hero .hero-title > span{
