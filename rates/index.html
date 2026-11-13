@@ -30,7 +30,7 @@ h2{font:32px/1 var(--serif);letter-spacing:-.04em;margin:0}
 .bundle{background:var(--butter);border-color:#432f2e30}
 .bundle .price{font:700 28px var(--serif);margin:14px 0 2px}
 .bundle ul{padding-left:18px;margin:12px 0 0;font-size:13px}
-.bundle li{margin:5px 0}
+.bundle li{margin:5px 0}.single-wide{grid-column:1/-1}
 .saving{font-size:11px;letter-spacing:.07em;text-transform:uppercase;font-weight:700;margin-top:14px}
 .note{margin-top:28px;padding:18px 20px;background:#f0ebdf;border-left:3px solid var(--cocoa);font-size:12px;color:var(--muted)}
 .contact{margin-top:34px;padding:26px;background:var(--blue);border-radius:5px;display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
@@ -81,10 +81,10 @@ footer{padding:20px 6vw;background:var(--cocoa);color:var(--butter);font-size:11
 <article class="card">
 <h3>Video advertisements</h3>
 <p class="desc">Created around the approved brief and product message.</p>
-<div class="item"><span>AI UGC / spokesperson video — 15 seconds</span><strong data-ngn="₦15,000" data-usd="$120">₦15,000</strong></div>
-<div class="item"><span>Product advertisement — up to 20 seconds</span><strong data-ngn="₦15,000" data-usd="$100">₦15,000</strong></div>
-<div class="item"><span>Short-form video ad — up to 30 seconds</span><strong data-ngn="₦25,000" data-usd="$180">₦25,000</strong></div>
-<div class="item"><span>3-video advertising package</span><strong data-ngn="Custom quote" data-usd="$350">Custom quote</strong></div>
+<div class="item"><span><span class="ngn-only">AI UGC / spokesperson video — 15 seconds</span><span class="usd-only" hidden>15–20 sec AI video ad</span></span><strong data-ngn="₦15,000" data-usd="$100">₦15,000</strong></div>
+<div class="item"><span><span class="ngn-only">Product advertisement — up to 20 seconds</span><span class="usd-only" hidden>30-second commercial</span></span><strong data-ngn="₦15,000" data-usd="$180">₦15,000</strong></div>
+<div class="item"><span><span class="ngn-only">Short-form video ad — up to 30 seconds</span><span class="usd-only" hidden>AI spokesperson video</span></span><strong data-ngn="₦25,000" data-usd="$120">₦25,000</strong></div>
+<div class="item usd-only" hidden><span>3-video advertising package</span><strong>USD 350</strong></div>
 </article>
 <article class="card">
 <h3>Campaign creative production</h3>
@@ -97,23 +97,13 @@ footer{padding:20px 6vw;background:var(--cocoa);color:var(--butter);font-size:11
 <section>
 <div class="section-head"><h2>03 · Product &amp; brand visuals</h2><span class="section-note">Each price covers the quantity shown</span></div>
 <div class="grid">
-<article class="card">
+<article class="card single-wide">
 <h3>Individual visual services</h3>
-<p class="desc">For online stores, catalogues, social platforms and campaigns.</p>
+<p class="desc">For online stores, catalogues, social platforms and campaigns. Each listed price covers the quantity shown.</p>
 <div class="item"><span>Product photography — 4 images</span><strong data-ngn="₦7,500" data-usd="$75">₦7,500</strong></div>
 <div class="item"><span>Instagram post designs — 4 designs (tutorial, educational, promotional or product-feature)</span><strong data-ngn="₦6,000" data-usd="$60">₦6,000</strong></div>
 <div class="item"><span>Product with model — 4 visuals</span><strong data-ngn="₦7,500" data-usd="$75">₦7,500</strong></div>
 <div class="item"><span>Carousel design — 5 slides</span><strong data-ngn="₦5,000" data-usd="$50">₦5,000</strong></div>
-</article>
-<article class="card bundle">
-<h3>Product content bundle</h3>
-<p class="desc">A coordinated set of product and social visuals.</p>
-<div class="item"><span>4 product photography images</span><strong>Included</strong></div>
-<div class="item"><span>4 product-with-model visuals</span><strong>Included</strong></div>
-<div class="item"><span>4 Instagram post designs</span><strong>Included</strong></div>
-<div class="item"><span>1 carousel design — 5 slides</span><strong>Included</strong></div>
-<div class="price" data-ngn="₦24,000" data-usd="$235">₦24,000</div>
-<div class="saving" data-ngn="Individual total: ₦26,000 · Save ₦2,000" data-usd="Individual total: $260 · Save $25">Individual total: ₦26,000 · Save ₦2,000</div>
 </article>
 </div>
 </section>
@@ -160,6 +150,8 @@ footer{padding:20px 6vw;background:var(--cocoa);color:var(--butter);font-size:11
 const currencyButtons = document.querySelectorAll('[data-currency]');
 function setCurrency(code){
  document.querySelectorAll('[data-ngn][data-usd]').forEach(el=>{el.textContent=el.dataset[code];});
+ document.querySelectorAll('.ngn-only').forEach(el=>{el.hidden=code!=='ngn';});
+ document.querySelectorAll('.usd-only').forEach(el=>{el.hidden=code!=='usd';});
  currencyButtons.forEach(btn=>{
   const active=btn.dataset.currency===code;
   btn.classList.toggle('active',active);
